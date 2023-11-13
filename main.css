@@ -1,0 +1,55 @@
+/* main.css */
+
+:root {
+    --green: #00FF00;
+    --white: #fff;
+    --black: #000;
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: Helvetica, sans-serif;
+}
+
+ul {
+    font-family: Helvetica, sans-serif;
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 100px; /* Aumentei a largura do botão para acomodar o texto "Escuro" e "Claro" */
+    border-radius: 25px; /* Metade da altura para criar uma aparência circular */
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.btn:focus {
+    outline-style: none;
+}
